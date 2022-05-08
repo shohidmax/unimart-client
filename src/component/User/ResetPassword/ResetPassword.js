@@ -5,23 +5,6 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const resetPassword = () => {
-  // const hamdlePassReset = (e) => {
-
-  //   const email = e.target.email.value;
-  //   console.log(email);
-  // };
-  //const emaildata = useRef('');
-  // const handlepasswordReset = async () => {
-  //     const email = emaildata.current.value;
-  //     console.log(email);
-  //     if (email) {
-  //         await sendPasswordResetEmail(email);
-  //         toast('Verify your Email');
-  //     }
-  //     else{
-  //         Toast('please enter your email address');
-  //     }
-  // }
   return (
     <div className="container">
       <div className="row">

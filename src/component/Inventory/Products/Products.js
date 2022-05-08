@@ -4,7 +4,6 @@ import ProDuct from "./ProDuct";
 const Products = () => {
   const [Product, setProduct] = useProduct();
   const handleUpdate = () =>{
-      console.log('clicked');
   }
   return (
     <div className="container bg-gradient p-2 text-dark bg-opacity-10">

@@ -24,7 +24,6 @@ const Login = () => {
     const handleEmailBlur = event => {
         setEmail(event.target.value);
     }
-    console.log('...///');
 
     const handlePasswordBlur = event => {
         setPassword(event.target.value);

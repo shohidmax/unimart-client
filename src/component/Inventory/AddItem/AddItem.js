@@ -17,12 +17,7 @@ const AddItem = () => {
         "Product_img_url": "https:\/\/pourobazar.com\/wp-content\/uploads\/2021\/09\/Parachute-Coconut-Oil-340ml.webp",
         "long_discription": "PARACHUTE COCONUT OIL 200ML is the original Product of PARACHUTE. It is a TOILETRIES item . It is HAIR OIL. To chaque it online by this barcode - 1136176 ."
        };
-    
-
-
     const [user] = useAuthState(auth);
-    //    console.log(user.email);
-
     const handleAddUser = event =>{
         
         event.preventDefault();
@@ -36,8 +31,6 @@ const AddItem = () => {
         const Product_img_url = event.target.Product_img_url.value;
         const long_discription = event.target.long_discription.value;
         const email = event.target.email.value;
-    
-        console.log(BarCode, Product, Brand, Style, Style, Stock_Qty, CPU, RPU, Product_img_url, long_discription, email);
 
         const Productdata = {BarCode, Product, Brand, Style, Style, Stock_Qty, CPU, RPU, Product_img_url, long_discription, email};
 
@@ -51,7 +44,6 @@ const AddItem = () => {
         })
         .then(res => res.json())
         .then(data =>{
-            console.log('success', data);
             alert('users added successfully!!!');
             event.target.reset();
         })

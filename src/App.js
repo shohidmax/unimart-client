@@ -16,8 +16,6 @@ import ManageInventory from './component/Inventory/ManageInventory/ManageInvento
 import Inventery from './component/Inventory/Inventery';
 
 function App() {
-  // const amar = process.env.REACT_APP_LOSS;
-  // console.log('env file not detected', amar);
   return (
     <div className="App">
       <Header></Header>

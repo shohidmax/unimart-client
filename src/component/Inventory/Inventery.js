@@ -16,7 +16,7 @@ const Inventery = () => {
         const currentStock = parseFloat(Pdata.Stock_Qty);
         const value = 1;
         const reStock = currentStock - value;
-        console.log(reStock);
+        
         
         const updatedStock = {reStock};
         // update Quntity quntity to the server
@@ -31,35 +31,19 @@ const Inventery = () => {
         .then(res => res.json())
         .then(data =>{
             // setPdata(data);
-            console.log('success', data);
-            alert('product quntity added successfully!!!');
+            alert('product quntity Delete successfully!');
             // event.target.reset();
             window.location.reload();
         })
      }
-    // const handleDelever = () =>{
-    //     const currentStock = parseFloat(Pdata.Stock_Qty);
-    //     const value = 1;
-    //     const decrise = currentStock - value;
-    //     console.log(decrise);
-    // //     // currentStock = reStock;
-    //     const updatedStockq = {decrise};
-    //     console.log(updatedStockq);
-    // }
+    
 
     const handleUpdateProduct = event =>{
         event.preventDefault();
-        // const handleDelever = () =>{
-        //         const currentStock = parseFloat(Pdata.Stock_Qty);
-        //         const decrise = currentStock - 1;
-        //     //     console.log(decrise);
-        //     //     // currentStock = reStock;
-        //         const updatedStockq = {decrise};
-        // }
+        
         
         const Stock_Qty = event.target.Stock_Qty.value;
         const reStock = parseFloat(Stock_Qty) + Pdata.Stock_Qty;
-        console.log(reStock, 're stoked');
         const updatedStock = {reStock};
         // update Quntity quntity to the server
         const url = `https://hidden-waters-14181.herokuapp.com/products/${id}`;
@@ -73,13 +57,12 @@ const Inventery = () => {
         .then(res => res.json())
         .then(data =>{
             // setPdata(data);
-            console.log('success', data);
             alert('product quntity added successfully!!!');
             event.target.reset();
             window.location.reload();
         })
     }
- //onClick={handleDelever}
+ 
     return (
         <div className='container'>
             <div className='row'>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Spinner from "../../../Element/Spinner";
 import useProduct from "../../../Hooks/useProduct/useProduct";
 
 const ManageInventory = () => {
@@ -9,7 +10,6 @@ const ManageInventory = () => {
     const handleUserDelete = id =>{
         const proceed = window.confirm('Are you sure you want to delete?');
         if(proceed){
-            console.log('deleting user with id, ', id);
             const url = `https://hidden-waters-14181.herokuapp.com/products/${id}`;
             fetch(url, {
                 method: 'DELETE'
@@ -17,12 +17,15 @@ const ManageInventory = () => {
             .then(res => res.json())
             .then(data =>{
                 if(data.deletedCount > 0){
-                    console.log('deleted');
                     const remaining = Product.filter(data => data._id !== id);
                     setProduct(remaining);
                 }
             })
         }
+    }
+    
+    if(Product.length == 0){
+      <Spinner></Spinner>
     }
 
   return (
