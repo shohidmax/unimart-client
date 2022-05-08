@@ -40,8 +40,8 @@ const ManageInventory = () => {
                 <th>Stock Quntity </th>
                 <th>Suppler Name</th>
                 <th>MRP ৳</th>
-                <th>quantity</th>
-                <th>quantity</th>
+                <th>Delete</th>
+                <th>Update</th>
               </tr>
             </thead>
             <tbody>
