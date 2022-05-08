@@ -20,7 +20,7 @@ const ProDuct = ({
 
   return (
     <div className="col-md-4 bg-sucess">
-      <Card className="mb-2 shadow-lg hover card text-white bg-secondary mb-3" style={{ width: "25rem" }}>
+      <Card className="mb-2 shadow-lg hover card text-white bg-secondary mb-3" style={{ width: "18rem" }}>
         <Card.Img
           style={{ width: "100%", height: "350px" }}
           variant="top"
