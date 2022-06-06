@@ -3,9 +3,10 @@ import { Container, Nav, Navbar} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "./Logo.png";
 import "./Header.css";
+import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
-import { signOut } from "firebase/auth";
+
 
 const Header = () => {
   const [user] = useAuthState(auth);

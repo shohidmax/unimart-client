@@ -20,7 +20,7 @@ const ProDuct = ({
 
   return (
     <div className="col-md-4 bg-sucess">
-      <Card className="mb-2 shadow-lg hover card text-white bg-secondary mb-3" style={{ width: "18rem" }}>
+      <Card className="mb-2 shadow-lg hover card text-white bg-secondary mb-3" style={{ width: "19rem" }}>
         <Card.Img
           style={{ width: "100%", height: "350px" }}
           variant="top"
@@ -39,7 +39,7 @@ const ProDuct = ({
           <ListGroupItem className="text-start text-white bg-secondary">Stock : {stock}</ListGroupItem>
         </ListGroup>
         <Card.Body>
-          <Link to={`/inventory/${id}`}>
+          <Link to={`/inventor$y/{id}`}>
             <Button variant="primary">Update</Button>
           </Link>
         </Card.Body>

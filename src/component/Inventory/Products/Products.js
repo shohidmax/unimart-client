@@ -31,3 +31,9 @@ const Products = () => {
 };
 
 export default Products;
+
+// app.get('/orders',(req,res)=>{
+//   const queryEmail=req.query.email;  // according to client email order list will be different
+//   orderCollection.find({email: queryEmail})
+//   .toArray((err,docs)=>res.send(docs))
+// })

@@ -35,7 +35,7 @@ const AddItem = () => {
         const Productdata = {BarCode, Product, Brand, Style, Style, Stock_Qty, CPU, RPU, Product_img_url, long_discription, email};
 
         // send data to the server
-        fetch('https://hidden-waters-14181.herokuapp.com/products', {
+        fetch('https://hidden-waters-14181.npm herokuapp.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
